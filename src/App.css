@@ -1,38 +1,109 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+  background:#8758ff;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  color: #fff;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-wrapper{
+  background: #1a1a40;
+  border-radius: 10px;
+  margin-top: 5vh;
+  padding: 2rem;
+  width: 95vw;
+  max-width: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.todo-btn{
+  background: #8758ff;
+  border-radius:0px 5px 5px 0px;
+  border: none;
+  padding: 0.60rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.todo-input::placeholder{
+  color: #ffffff4d;
+}
+
+.todo-input{
+  padding: 0.55rem;
+  border: 1px solid #8758ff;
+  border-radius: 5px 0px 0px 5px;
+  padding: 0.55rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 55vw;
+  max-width: 350px;
+  background: none;
+  outline: none;
+  color: #fff;
+} 
+
+#edit-todo-input{
+  width: 48vw;
+  max-width: 333px;
+}
+
+.todo{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  background: #8758ff;
+  border-radius: 5px;
+  padding: 0.70rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.icons{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.completed{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background: #8758ff4e;
+  border-radius: 5px;
+  padding: 0.70rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hide-checked-icon{
+  display: none;
+}
+
+p{
+  margin-right: 15px;
+  /* padding: 0 15px; */
+  text-align: justify;
 }
